@@ -100,7 +100,7 @@
   left: 13px;
   width: 14px;
   height: 12px;
-  background: url(icon_light.f13cff3.png) 0 -26px;
+  background: url(../imge/icon_light.f13cff3.png) 0 -26px;
   background-size: 34px 471px;
 }
 
@@ -111,6 +111,6 @@
   width: 34px;
   height: 34px;
   cursor: pointer;
-  background: url(icon_light.f13cff3.png) 0 -437px;
+  background: url(../imge/icon_light.f13cff3.png) 0 -437px;
   background-size: 34px 471px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>滑动拼图验证码</title>
@@ -35,8 +35,8 @@
 </head>
 <body>
 <div class="container">
-  <input value="admin"/>
-  <input type="password" value="123456"/>
+  <input value="admin" title="用户名"/>
+  <input type="password" value="123456" title="密码"/>
   <div id="captcha" style="position: relative"></div>
   <div id="msg"></div>
 </div>
@@ -49,7 +49,7 @@
     },
     onFail: cleanMsg,
     onRefresh: cleanMsg
-  })
+  });
   function cleanMsg() {
     document.getElementById('msg').innerHTML = ''
   }

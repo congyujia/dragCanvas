@@ -41,7 +41,7 @@
   }
   
   function getRandomImg() {
-    return "./"+Math.floor(Math.random()*5+1)+".jpg";
+    return "../img/"+Math.floor(Math.random()*5+1)+".jpg";
   }
 
   function draw(ctx, x, y, operation) {
@@ -71,20 +71,12 @@
   }
 
   class dragCanvas {
-      canvasCtx;
-      blockCtx;
-      block;
-      refreshIcon;
-      slider;
-      sliderContainer;
-      sliderMask;
-      text;
-    constructor({el, onSuccess, onFail, onRefresh}) {
-      this.el = el;
-      this.onSuccess = onSuccess;
-      this.onFail = onFail;
-      this.onRefresh = onRefresh
-    }
+      constructor({el, onSuccess, onFail, onRefresh}) {
+          this.el = el;
+          this.onSuccess = onSuccess;
+          this.onFail = onFail;
+          this.onRefresh = onRefresh
+        }
 
     init() {
       this.initDOM();
